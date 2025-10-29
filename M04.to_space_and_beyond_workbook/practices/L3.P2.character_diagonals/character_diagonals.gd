@@ -13,6 +13,8 @@ func _process(delta: float) -> void:
 
 	# The character is way too fast, but only when moving diagonally!
 	# Add code to prevent that.
+	if velocity.length() > 1.0:
+		velocity = velocity.normalized()
 
 	velocity = direction * max_speed
 	position += velocity * delta
