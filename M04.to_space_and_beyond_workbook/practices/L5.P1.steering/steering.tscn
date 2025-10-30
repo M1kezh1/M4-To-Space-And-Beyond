@@ -1,8 +1,8 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://bk5on335ig365"]
 
-[ext_resource type="Texture2D" path="res://assets/practice_assets/shape_ship.png" id="1_d5can"]
-[ext_resource type="Script" path="res://practices/L5.P1.steering/steering.gd" id="2_nxetu"]
-[ext_resource type="Texture2D" path="res://assets/practice_assets/ellipse_white.png" id="3_ls5kn"]
+[ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://assets/practice_assets/shape_ship.png" id="1_d5can"]
+[ext_resource type="Script" uid="uid://c8fa0nllfxdyl" path="res://practices/L5.P1.steering/steering.gd" id="2_nxetu"]
+[ext_resource type="Texture2D" uid="uid://bkueifls7csiy" path="res://assets/practice_assets/ellipse_white.png" id="3_ls5kn"]
 [ext_resource type="PackedScene" path="res://practices/L5.P1.steering/background.tscn" id="4_kcvbg"]
 
 [sub_resource type="Curve" id="Curve_p40xv"]
@@ -31,4 +31,4 @@ texture = ExtResource("3_ls5kn")
 visibility_rect = Rect2(-4000, -4000, 4000, 4000)
 process_material = SubResource("ParticleProcessMaterial_rwfi4")
 
-[node name="Background" type="Node" parent="." instance=ExtResource("4_kcvbg")]
+[node name="Background" parent="." instance=ExtResource("4_kcvbg")]
